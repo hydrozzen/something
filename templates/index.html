@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .button {
+      background-color: red;
+      border: none;
+      color: white;
+      padding: 15px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+</style>
+<style>
+    .responsive {
+      width: 100%;
+      height: auto;
+    }
+    </style>
+
+<header><img src="{% static 'assets/aw.gif' %}" alt="Nature" class="responsive" width="600" height="400">
+    
+
+ 
+    <div class="z-10 h-full py-32 md:py-0 text-gray-100 text-center flex items-center flex-col">
+        <h1 class="font-semibold text-4xl md:text-5xl w-10/12 md:w-3/4 text-center">
+            
+            नटखट India में आपका स्वागत है
+        </h1>
+        <h3 class="text-xl md:text-xl py-5">
+            Watch anywhere. Absolutely Free.
+        </h3>
+        <h4 class="text-sm md:text-lg pb-3">
+            
+            सिर्फ 10 रुपये में, पूरे एक महीने के लिए! एक कप चाय से भी सस्ता है
+        </h4>
+        <h3 class="text-xl md:text-xl py-5">
+            पहले 500, नटखट लोगों
+            को एक साल के लिए मुफ्त एक्सेस मिलेगा
+        </h3>
+
+   
+</header>
+
+<section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+    <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10 ">
+        <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+            Enjoy on your TV.
+        </h2>
+        <h5 class="md:text-xl text-lg">
+            Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more via a link
+        </h5>
+    </div>
+    <div class='md:w-1/2 flex justify-center items-center'>
+        <img src="{% static 'assets/tv.png' %}" class="w-8/12" alt="">
+    </div>
+</section>
+
+<section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+    <div class='md:w-1/2 flex justify-center items-center order-2'>
+        <img src="{% static 'assets/mobile0819.jpg' %}" class="w-8/12" alt="">
+    </div>
+
+    <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+        <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+            Download your shows to watch offline.
+        </h2>
+        <h5 class="md:text-xl text-lg">
+            Save your favorites easily and always have something to watch.
+        </h5>
+    </div>
+    
+</section>
+
+<section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+    <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+        <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+            Create profiles for kids.
+        </h2>
+        <h5 class="md:text-xl text-lg">
+            Send kids on adventures with their favorite characters in a space made just for them—free with your membership.
+        </h5>
+    </div>
+    <div class='md:w-1/2 flex justify-center items-center'>
+        <img src="{% static 'assets/netflix_kid.png' %}" class="w-8/12" alt="">
+    </div>
+</section>
+
+<section class='flex flex-col md:flex-row items-center border-gray-900 border-b-8' style="min-height: 70vh;">
+    <div class="md:w-1/2 flex flex-col justify-center text-center md:text-left p-5 md:p-10">
+        <h2 class="md:text-5xl text-4xl font-semibold mb-4">
+            Request Option
+        </h2>
+        <h5 class="md:text-xl text-lg">
+            With the use of request option a user can request his/hetr movie/webserie by mailing which we will upload over here..As soon As poossible
+        </h5>
+    </div>
+    <div class='md:w-1/2 flex justify-center items-center'>
+        <img src="{% static 'assets/request.gif' %}" class="w-8/12" alt="">
+    </div>
+</section>
+{% endblock content %}
